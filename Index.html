@@ -181,8 +181,8 @@
    </head>
 <body class="overflow-x-hidden snap-y snap-mandatory overflow-y-scroll h-screen">
 
-<!-- 🌐 Home Page Navigation Bar -->
-<div id="home-navbar" class="w-full fixed top-0 z-50 text-white px-4 py-2 bg-black bg-opacity-90 flex flex-col sm:flex-row items-center justify-between">
+<!-- 🌐 Navigation Bar -->
+<div id="home-navbar" class="w-full fixed top-0 z-50 text-white px-4 py-2 backdrop-blur-md bg-black bg-opacity-40 flex flex-col sm:flex-row items-center justify-between border-b border-yellow-500 shadow-[0_0_10px_2px_rgba(255,215,0,0.3)]">
   <!-- Logo & Lodge Name -->
   <div class="text-base sm:text-lg font-extrabold tracking-wider text-center leading-tight">
     <div class="uppercase">RAJA LODGE OOTY 🏨</div>
@@ -190,8 +190,8 @@
   </div>
 
   <!-- Navigation Links -->
-  <div class="flex flex-wrap justify-center sm:justify-end gap-4 mt-1 sm:mt-0 text-xs sm:text-sm font-bold uppercase tracking-widest elegant-nav">
-    <a href="#home" class="hover:text-yellow-300 transition-all">home🏠</a>
+  <div class="flex flex-wrap justify-center sm:justify-end gap-4 mt-1 sm:mt-0 text-xs sm:text-sm font-bold uppercase tracking-widest">
+    <a href="#home" class="hover:text-yellow-300 transition-all">Home🏠</a>
     <a href="#about" class="hover:text-yellow-300 transition-all">About🏨</a>
     <a href="#gallery" class="hover:text-yellow-300 transition-all">Gallery🖼️</a>
     <a href="#pricing" class="hover:text-yellow-300 transition-all">Pricing💰</a>
@@ -211,26 +211,30 @@
 
   <!-- Content Wrapper -->
   <div class="flex flex-col items-center justify-center h-full text-center px-4">
-    <!-- Logo with Border -->
-    <img src="IMG-20250731-WA0005.jpg" alt="Raja Lodge Logo" class="w-28 h-28 rounded-full border-4  mb-4 mt-6" />
+    <!-- Logo with Glow and Background -->
+    <img 
+      src="IMG-20250731-WA0005.jpg" 
+      alt="Raja Lodge Logo"
+      class="w-28 h-28 rounded-full border-4 border-white bg-black bg-opacity-60 p-1 mb-4 mt-6 shadow-[0_0_25px_5px_rgba(255,255,255,0.7)]" 
+    />
 
     <!-- Welcome Text -->
-    <h1 class="text-3xl sm:text-4xl font-extrabold text-yellow-400">Welcome to RAJA LODGE</h1>
-    <p class="mt-2 text-lg sm:text-xl italic text-white leading-snug">
+    <h1 class="text-3xl sm:text-4xl font-extrabold text-yellow-400 drop-shadow-lg">Welcome to RAJA LODGE</h1>
+    <p class="mt-2 text-lg sm:text-xl italic text-white leading-snug drop-shadow-md">
       "Experience comfort in the Queen of Hills🏔️🌨️.<br>Where warmth meets heritage❤️✨."
     </p>
 
-    <!-- Buttons -->
+    <!-- Action Buttons -->
     <div class="mt-8 flex space-x-4">
-      <a href="tel:9384989077" class="bg-yellow-400 text-black font-semibold px-6 py-3 rounded-full border-2 border-white hover:bg-white hover:text-yellow-500 transition">
+      <a href="tel:9384989077" class="bg-yellow-400 text-black font-semibold px-6 py-3 rounded-full border-2 border-white hover:bg-white hover:text-yellow-500 transition shadow-lg">
         📞 Call Now
       </a>
-      <a href="https://wa.me/9843830181" class="bg-transparent text-white font-semibold px-6 py-3 rounded-full border-2 border-white hover:bg-yellow-400 hover:text-black transition">
+      <a href="https://wa.me/9843830181" class="bg-transparent text-white font-semibold px-6 py-3 rounded-full border-2 border-white hover:bg-yellow-400 hover:text-black transition shadow-lg">
         💬 WhatsApp
       </a>
     </div>
   </div>
-</section>
+  </section>
 <!-- 🏨 About Section -->
 <section 
   id="about" 
@@ -583,7 +587,7 @@
 </div>
 
   </div>  
-</section>  <!-- AOS Init -->  <script>  
+  <!-- AOS Init -->  <script>  
   AOS.init();  
 </script>    <script>  
   const navbar = document.getElementById("home-navbar");  
@@ -607,12 +611,6 @@
   </script> 
 
 
-         <!-- Go to Top Button -->
-<button onclick="window.scrollTo({ top: 0, behavior: 'smooth' });"
-        class="fixed centre bg-yellow-400 text-black font-bold p-3 rounded-full z-50"
-        style="box-shadow: inset 0 0 18px rgba(255,215,0,0.5), 0 0 28px rgba(255,215,0,0.4);">
-  ⬆️
-</button> 
 
         <footer class="w-full bg-[#0B0F26] bg-opacity-50 backdrop-blur-md text-white py-6 text-center mt-10 border-t border-white shadow-[0_0_20px_2px_rgba(255,255,255,0.3)]">
   
@@ -636,8 +634,16 @@
         </footer>
         </section>
       </section>
+</section >
 </div>
-</div>    
+</div>  
+  
+         <!-- Go to Top Button -->
+<button onclick="window.scrollTo({ top: 0, behavior: 'smooth' });"
+        class="fixed centre bg-yellow-400 text-black font-bold p-3 rounded-full z-50"
+        style="box-shadow: inset 0 0 18px rgba(255,215,0,0.5), 0 0 28px rgba(255,215,0,0.4);">
+  ⬆️
+</button> 
 
 <!-- AOS Init Script -->
 <script>
