@@ -178,6 +178,45 @@
     });  
   });  
 </script>  
+  <style>
+@keyframes fadeUpLoop {
+  0%, 100% { opacity: 0; transform: translateY(20px); }
+  50% { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeLeftLoop {
+  0%, 100% { opacity: 0; transform: translateX(-20px); }
+  50% { opacity: 1; transform: translateX(0); }
+}
+
+@keyframes flipUpLoop {
+  0%, 100% { transform: rotateX(90deg); opacity: 0; }
+  50% { transform: rotateX(0); opacity: 1; }
+}
+
+@keyframes zoomInLoop {
+  0%, 100% { transform: scale(0.9); opacity: 0.5; }
+  50% { transform: scale(1); opacity: 1; }
+}
+
+@keyframes fadeRightLoop {
+  0%, 100% { opacity: 0; transform: translateX(20px); }
+  50% { opacity: 1; transform: translateX(0); }
+}
+
+@keyframes slideUpLoop {
+  0%, 100% { transform: translateY(30px); opacity: 0; }
+  50% { transform: translateY(0); opacity: 1; }
+}
+
+/* Utility classes */
+.animate-fade-up     { animation: fadeUpLoop 3s ease-in-out infinite; }
+.animate-fade-left   { animation: fadeLeftLoop 3s ease-in-out infinite; }
+.animate-flip-up     { animation: flipUpLoop 3s ease-in-out infinite; }
+.animate-zoom-in     { animation: zoomInLoop 3s ease-in-out infinite; }
+.animate-fade-right  { animation: fadeRightLoop 3s ease-in-out infinite; }
+.animate-slide-up    { animation: slideUpLoop 3s ease-in-out infinite; }
+  </style>
    </head>
 <body class="overflow-x-hidden snap-y snap-mandatory overflow-y-scroll h-screen">
 
@@ -240,7 +279,7 @@
   id="about" 
   class="w-full min-h-screen bg-cover bg-center relative flex items-center justify-center px-4 sm:px-6 md:px-10" 
   style="background-image: url('image-7.png');" 
-  data-aos="flip-up"
+  data-aos="animated flip-up"
 >
   <div class="bg-white bg-opacity-10 backdrop-blur-md rounded-2xl sm:rounded-3xl p-6 sm:p-8 md:p-12 max-w-5xl w-full text-center text-white shadow-2xl border border-white/20 flex flex-col justify-center">
 
@@ -289,7 +328,7 @@
 <section 
   id="gallery" 
   class="snap-start w-full min-h-screen bg-[#DE978F]/50 text-white p-10 backdrop-blur-md" 
-  data-aos="flip-up"
+  data-aos="animated flip-up"
 >
   <div class="border-2 border-white rounded-xl p-6 shadow-[0_0_25px_5px_rgba(255,255,255,0.4)] bg-white/10 backdrop-blur-lg">
 
@@ -339,7 +378,7 @@
 <section 
   id="pricing" 
   class="w-full min-h-screen bg-[#C17F8B]/50 text-white p-6 sm:p-10 backdrop-blur-md"
-  data-aos="zoom-in"
+  data-aos="animated zoom-in"
 >
   <div class="border-2 border-white rounded-xl p-6 shadow-[0_0_25px_5px_rgba(255,255,255,0.4)] bg-white/10 backdrop-blur-lg text-center mb-10">
     <h1 class="text-3xl md:text-4xl font-bold mb-2 font-serif">𝙋𝙍𝙄𝘾𝙄𝙉𝙂 💰</h1>
@@ -401,7 +440,7 @@
   <section 
     id="reviews" 
     class="w-full min-h-screen bg-[#9D6C82]/50 text-white p-6 sm:p-10 backdrop-blur-md"
-    data-aos="fade-right"
+    data-aos="animated fade-right"
   >
     <div class="bg-white/10 backdrop-blur-lg p-6 rounded-xl border-2 border-white shadow-[0_0_25px_5px_rgba(255,255,255,0.4)]">
       <h2 class="text-3xl md:text-4xl font-bold mb-6 text-center font-serif drop-shadow">
@@ -510,7 +549,7 @@
              </section>
    <!-- 📃 Guidelines -->
 
-<section id="guidelines" class="w-full min-h-screen bg-[#564779]/50 text-white p-10 backdrop-blur-md" data-aos="slide-up">
+<section id="guidelines" class="w-full min-h-screen bg-[#564779]/50 text-white p-10 backdrop-blur-md" data-aos="animated slide-up">
   <div class="border-2 border-white rounded-xl p-6 mt-10 mx-4 md:mx-20 
               bg-white/10 backdrop-blur-lg shadow-[0_0_25px_5px_rgba(255,255,255,0.4)]">
 
@@ -560,7 +599,7 @@
   }
 </style>
          <!-- Contact Placeholder -->  
-        <section id="contact" data-aos="fade-up" data-aos-duration="1200">
+        <section id="contact" data-aos="animated fade-up" data-aos-duration="1200">
         <section id="contact" class="w-full min-h-screen  py-10 px-4 sm:px-6 text-white" style="background: linear-gradient(135deg, #000000, #0a2540); font-family: 'Segoe UI', sans-serif;">  
   <div class="max-w-md mx-auto"> 
 <div class="neon-glow-box p-3,shadow shadow-[0_0_15px_2px_rgba(0,191,255,0.4)">
