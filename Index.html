@@ -36,7 +36,10 @@
         }  
       }  
     }  
-  </script>    <!-- Custom Styles -->    <style>  
+  </script>   
+  <!-- Font Awesome for social icons -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-rs3V+j2SfbUldLme0a6vXn1EjaUjK+WJSmv3+mn8JH5hKm3gxvn/xzGQp6zFE08LGCSjL3bhbjsOJ3Ofu+Ht2w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- Custom Styles -->    <style>  
     html {  
       scroll-behavior: smooth;  
     }  
@@ -217,6 +220,44 @@
 .animate-fade-right  { animation: fadeRightLoop 3s ease-in-out infinite; }
 .animate-slide-up    { animation: slideUpLoop 3s ease-in-out infinite; }
   </style>
+  <style>
+@keyframes fadeUpLoop {
+  0%, 100% { opacity: 0; transform: translateY(20px); }
+  50% { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeLeftLoop {
+  0%, 100% { opacity: 0; transform: translateX(20px); }
+  50% { opacity: 1; transform: translateX(0); }
+}
+
+@keyframes flipUpLoop {
+  0%, 100% { transform: rotateX(90deg); opacity: 0; }
+  50% { transform: rotateX(0); opacity: 1; }
+}
+
+@keyframes zoomInLoop {
+  0%, 100% { transform: scale(0.8); opacity: 0; }
+  50% { transform: scale(1); opacity: 1; }
+}
+
+@keyframes fadeRightLoop {
+  0%, 100% { opacity: 0; transform: translateX(-20px); }
+  50% { opacity: 1; transform: translateX(0); }
+}
+
+@keyframes slideUpLoop {
+  0%, 100% { transform: translateY(100px); opacity: 0; }
+  50% { transform: translateY(0); opacity: 1; }
+}
+
+.animate-fade-up     { animation: fadeUpLoop 3s ease-in-out infinite; }
+.animate-fade-left   { animation: fadeLeftLoop 3s ease-in-out infinite; }
+.animate-flip-up     { animation: flipUpLoop 3s ease-in-out infinite; }
+.animate-zoom-in     { animation: zoomInLoop 3s ease-in-out infinite; }
+.animate-fade-right  { animation: fadeRightLoop 3s ease-in-out infinite; }
+.animate-slide-up    { animation: slideUpLoop 3s ease-in-out infinite; }
+  </style>
    </head>
 <body class="overflow-x-hidden snap-y snap-mandatory overflow-y-scroll h-screen">
 
@@ -254,7 +295,7 @@
     <img 
       src="IMG-20250731-WA0005(2).jpg" 
       alt="Raja Lodge Logo"
-      class="w-27.2 h-27.2 rounded-full border-4 border-white bg-black bg-opacity-60 p-1 mb-4 mt-6 shadow-[0_0_25px_5px_rgba(255,255,255,0.7)]" 
+      class="w-25.2 h-25.2 rounded-full border-4 border-white bg-black bg-opacity-60 p-1 mb-4 mt-6 shadow-[0_0_25px_5px_rgba(255,255,255,0.7)]" 
     />
 
     <!-- Welcome Text -->
@@ -279,7 +320,7 @@
   id="about" 
   class="w-full min-h-screen bg-cover bg-center relative flex items-center justify-center px-4 sm:px-6 md:px-10" 
   style="background-image: url('image-7.png');" 
-  data-aos="animate flip-up"
+  data-aos="animate-flip-up"
 >
   <div class="bg-white bg-opacity-10 backdrop-blur-md rounded-2xl sm:rounded-3xl p-6 sm:p-8 md:p-12 max-w-5xl w-full text-center text-white shadow-2xl border border-white/20 flex flex-col justify-center">
 
@@ -328,7 +369,7 @@
 <section 
   id="gallery" 
   class="snap-start w-full min-h-screen bg-[#DE978F]/50 text-white p-10 backdrop-blur-md" 
-  data-aos="animate flip-up"
+  data-aos="animate-flip-up"
 >
   <div class="border-2 border-white rounded-xl p-6 shadow-[0_0_25px_5px_rgba(255,255,255,0.4)] bg-white/10 backdrop-blur-lg">
 
@@ -378,7 +419,7 @@
 <section 
   id="pricing" 
   class="w-full min-h-screen bg-[#C17F8B]/50 text-white p-6 sm:p-10 backdrop-blur-md"
-  data-aos="animate zoom-in"
+  data-aos="animate-zoom-in"
 >
   <div class="border-2 border-white rounded-xl p-6 shadow-[0_0_25px_5px_rgba(255,255,255,0.4)] bg-white/10 backdrop-blur-lg text-center mb-10">
     <h1 class="text-3xl md:text-4xl font-bold mb-2 font-serif">𝙋𝙍𝙄𝘾𝙄𝙉𝙂 💰</h1>
@@ -448,7 +489,7 @@
   <section 
     id="reviews" 
     class="w-full min-h-screen bg-[#9D6C82]/50 text-white p-6 sm:p-10 backdrop-blur-md"
-    data-aos="animate fade-right"
+    data-aos="animate-fade-right"
   >
     <div class="bg-white/10 backdrop-blur-lg p-6 rounded-xl border-2 border-white shadow-[0_0_25px_5px_rgba(255,255,255,0.4)]">
       <h2 class="text-3xl md:text-4xl font-bold mb-6 text-center font-serif drop-shadow">
@@ -557,7 +598,7 @@
              </section>
    <!-- 📃 Guidelines -->
 
-<section id="guidelines" class="w-full min-h-screen bg-[#564779]/50 text-white p-10 backdrop-blur-md" data-aos="animate slide-up">
+<section id="guidelines" class="w-full min-h-screen bg-[#564779]/50 text-white p-10 backdrop-blur-md" data-aos="animate_slide-up">
   <div class="border-2 border-white rounded-xl p-6 mt-10 mx-4 md:mx-20 
               bg-white/10 backdrop-blur-lg shadow-[0_0_25px_5px_rgba(255,255,255,0.4)]">
 
@@ -607,7 +648,7 @@
   }
 </style>
          <!-- Contact Placeholder -->  
-        <section id="contact" data-aos="animate fade-up" data-aos-duration="1200">
+        <section id="contact" data-aos="animate-fade-up" data-aos-duration="1200">
         <section id="contact" class="w-full h-[80vh]  py-10 px-4 sm:px-6 text-white" style="background: linear-gradient(135deg, #000000, #0a2540); font-family: 'Segoe UI', sans-serif;">  
   <div class="max-w-md mx-auto"> 
 <div class="neon-glow-box p-3,shadow shadow-[0_0_15px_2px_rgba(0,191,255,0.4)">
@@ -627,6 +668,22 @@
   <p><strong>💬 WhatsApp:</strong>  
     <a href="https://wa.me/9843830181" target="_blank" class="text-yellow-400 hover:underline">Message on WhatsApp</a>  
   </p>  
+      
+    <!-- Social Media Icons -->
+    <div class="flex justify-center items-center gap-8 text-2xl">
+      <!-- Facebook -->
+      <a href="https://www.facebook.com/share/1TppYe9zSs/" target="_blank" rel="noopener noreferrer"
+         class="text-white hover:text-blue-400 transition duration-300">
+        <i class="fab fa-facebook-square"></i>
+      </a>
+
+      <!-- Instagram -->
+      <a href="https://www.instagram.com/raja_lodge_45?igsh=MTJ1Mm10NWdqcnQzOQ==" target="_blank" rel="noopener noreferrer"
+         class="text-white hover:text-pink-400 transition duration-300">
+        <i class="fab fa-instagram"></i>
+      </a>
+    </div>
+      
 
   <p><strong>🗺️ Location:</strong>  
     <a href="https://maps.app.goo.gl/a5QaWoUhVjzJ6Zy5A" target="_blank" class="text-yellow-400 hover:underline">View on Google Maps</a>  
@@ -660,25 +717,28 @@
 
 
         <footer class="w-full bg-[#0B0F26] bg-opacity-50 backdrop-blur-md text-white py-6 text-center mt-10 border-t border-white shadow-[0_0_20px_2px_rgba(255,255,255,0.3)]">
-  
+  <!-- Footer -->
+<footer class="w-full bg-[#0B0F26] bg-opacity-50 backdrop-blur-md text-white py-6 text-center mt-10 border-t border-white shadow-[0_0_20px_2px_rgba(255,255,255,0.3)]">
+
   <!-- Social Links -->
   <div class="flex justify-center items-center gap-6 mb-3">
-    <a href="https://www.facebook.com/share/1TppYe9zSs/" target="_blank" rel="noopener noreferrer" class="hover:text-blue-400 transition">
-      <i class="fab fa-facebook fa-lg"></i> <!-- Requires FontAwesome -->
+    <a href="https://www.facebook.com/share/1TppYe9zSs/" target="_blank" rel="noopener noreferrer" class="text-white hover:text-blue-400 transition">
+      <i class="fab fa-facebook fa-lg"></i>
     </a>
-    <a href="https://www.instagram.com/raja_lodge_45?igsh=MTJ1Mm10NWdqcnQzOQ==" target="_blank" rel="noopener noreferrer" class="hover:text-pink-400 transition">
+    <a href="https://www.instagram.com/raja_lodge_45?igsh=MTJ1Mm10NWdqcnQzOQ==" target="_blank" rel="noopener noreferrer" class="text-white hover:text-pink-400 transition">
       <i class="fab fa-instagram fa-lg"></i>
     </a>
-    <a href="https://www.rajalodge.in" target="_blank" class="hover:text-yellow-400 transition">
+    <a href="https://www.rajalodge.in" target="_blank" class="text-white hover:text-yellow-400 transition">
       <i class="fas fa-globe fa-lg"></i>
     </a>
   </div>
 
   <!-- Footer Text -->
-  <p class="relative z-10 text-sm sm:text-base font-light tracking-wider text-yellow-300">
+  <p class="text-sm sm:text-base font-light tracking-wider text-yellow-300">
     © 2025 Raja Lodge, Ooty. All rights reserved. | 45 Years of Trusted Service
   </p>
-        </footer>
+
+</footer>
         </section>
       </section>
 </section >
